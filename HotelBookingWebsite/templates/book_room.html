@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+</head>
+<body>
+    <h2>Booking for {{ room.room_no }}</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="check_in">Check-in Date:</label>
+        <input type="date" name="check_in_date" required>
+        <label for="check_out">Check-out Date:</label>
+        <input type="date" name="check_out_date" required>
+        <button type="submit">Book</button>
+    </form>
+</body>
+</html>
