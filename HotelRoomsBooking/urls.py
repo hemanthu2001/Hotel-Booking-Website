@@ -20,4 +20,6 @@ from HotelBookingWebsite.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('register/', register, name='register'),
+    path('book_room/(?P<room_id>\d+)', book_room, name='book_room'),
 ]
